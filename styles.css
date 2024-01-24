@@ -16,10 +16,20 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  width: 100%;
+}
+.nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.icon {
+    width: 15px;
 }
 li {
   float: left;
