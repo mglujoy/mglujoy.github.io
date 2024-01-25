@@ -1,12 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-html {
-  height: 100%;
-}
-
 body {
     background: #E0E0E0;
+    background-image: url(/img/banner2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
+}
+.header img {
+  margin-top: 15px;
+  width: 2.5%;
+  border-radius: 25px;
+}
+.header {
+  overflow: auto;
+}
+.header img {
+  float: left;
+}
+.header h1 {
+  margin-left: 50px;
 }
 
 /*Navbar*/
@@ -46,4 +59,22 @@ li a:hover {
 }
 .active {
     background-color: #04AA6D;
+}
+
+/*Cover*/
+.cover {
+  overflow:auto;
+}
+.cover div {
+  float:left;
+}
+iframe {
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 400px;
+  height: 250px;
+  border: none;
+  filter: grayscale(1) invert(1);
 }
