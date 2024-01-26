@@ -2,27 +2,11 @@
 
 body {
     background: #E0E0E0;
-    background-image: url(/img/banner2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
 }
-.header img {
-  margin-top: 15px;
-  width: 2.5%;
-  border-radius: 25px;
+header {
+  text-align: center;
 }
-.header {
-  overflow: auto;
-}
-.header img {
-  float: left;
-}
-.header h1 {
-  margin-left: 50px;
-}
-
-/*Navbar*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -35,11 +19,14 @@ ul {
     position: sticky;
     top: 0;
     width: 100%;
+    text-align: center;
 }
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 .icon {
     width: 15px;
@@ -60,21 +47,36 @@ li a:hover {
 .active {
     background-color: #04AA6D;
 }
-
-/*Cover*/
-.cover {
-  overflow:auto;
+section {
+  display: -webkit-flex;
+  display: flex;
 }
-.cover div {
-  float:left;
+figure {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
 }
 iframe {
   border-radius: 15px;
-  margin-left: 25px;
-  margin-top: 5px;
   padding: 10px;
-  width: 400px;
-  height: 250px;
+  width: 100%;
   border: none;
   filter: grayscale(1) invert(1);
+}
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+.cover {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
