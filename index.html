@@ -9,6 +9,8 @@
     <title>M. Glujoy</title>
 </head>
 <body>
+  <script>console.log("Looking at the console, are you?")</script>
+  <script>console.log("Hope you find something interesting")</script>
   <header class="header"><h1>Maximiliano Glujoy</h1></header>
   <nav class="nav">
       <ul>
@@ -23,15 +25,21 @@
       <img class="cover" src="./img/MGlujoyCirc.png" alt="Maximiliano Glujoy" width="240">
     </figure> 
     <article>
-      <h3>Pharmacist <br> Calisthenics Instructor <br> Libertarian <br> Bass Guitar Player </h3>
+      <h3 id="h3">Pharmacist <br> Calisthenics Instructor <br> Libertarian Philosophy <br> </h3>
       <h4>Crypto Explorer <br> Developer Wannabe <br> Certified in Cybersecurity <br></h4>
+      <h5>Bass Guitar Player</h5>
+      <button type="button" onclick="document.getElementById('h3').style.fontSize='35px'"><b>Main Skills</b></button>
+      <button type="button" onclick="window.alert(Date())"> <b>Date and Time</b></button>
+      <p id="date"></p>
     </article>
     <aside>
     </aside>
   </section>
   <section>
-    <button type="button" onclick="document.getElementById('date').innerHTML = Date()"> Click me to display Date and Time.</button>
-    <p id="date"></p>
+    <figure>
+    </figure>
+    <article>      
+    </article>
   </section>
   <!--
   <section>
