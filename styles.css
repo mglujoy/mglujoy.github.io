@@ -3,6 +3,7 @@
 body {
     background: #E0E0E0;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
 }
 header {
   text-align: center;
@@ -26,8 +27,6 @@ ul {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px;
-    text-align: center;
 }
 .icon {
     width: 15px;
@@ -70,7 +69,7 @@ iframe {
   border: none;
   filter: grayscale(1) invert(1);
 }
-article {
+article, aside {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
